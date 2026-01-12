@@ -41,7 +41,7 @@ Penilaian ini bertujuan menemukan kelemahan utama yang memicu terjadinya pelangg
 
 Hasil penilaian diharapkan dapat menjadi landasan untuk menyusun langkah network hardening yang lebih kuat dan konsisten. Pendekatan ini bertujuan mencegah insiden serupa di masa depan sekaligus memperkuat keamanan jaringan secara menyeluruh.
 
-#### Identified vulnerabilities
+#### a. Identified vulnerabilities
 
 Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamanan yang berperan dalam terjadinya kebocoran data. Masalah ini muncul dari kombinasi kelemahan teknis dan kebiasaan keamanan yang belum dijalankan secara konsisten.
 
@@ -52,7 +52,7 @@ Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamana
 |C. Unconfigured firewall rules|Firewall belum diatur dengan aturan penyaringan lalu lintas yang jelas. Lalu lintas masuk dan keluar jaringan berjalan tanpa batasan yang memadai, sehingga peluang akses tidak sah dari luar jaringan menjadi lebih besar.|
 |D. Absence of Multi-Factor Authentication (MFA)|Autentikasi multifaktor belum diterapkan pada akun pengguna maupun akun dengan hak akses tinggi. Proses login masih bergantung pada username dan password, yang membuat sistem rentan saat kredensial bocor atau dicuri.|
 
-#### Risk analysis
+#### b. Risk analysis
 
 Analisis risiko dilakukan dengan melihat seberapa besar peluang tiap celah keamanan bisa dimanfaatkan, serta dampak yang muncul jika hal itu benar-benar terjadi. Hasilnya menunjukkan bahwa sebagian besar kerentanan berada pada level risiko tinggi hingga kritis dan tidak bisa ditunda penanganannya.
 
