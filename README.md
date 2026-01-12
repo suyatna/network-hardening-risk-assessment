@@ -47,10 +47,10 @@ Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamana
 
 |Kerentanan|Penjelasan|
 |---|---|
-|A. Shared employee passwords|Sejumlah karyawan memakai kata sandi yang sama untuk mengakses sistem internal. Pola ini menyulitkan pelacakan aktivitas pengguna dan meningkatkan risiko penyalahgunaan akses. Satu akun yang berhasil ditembus dapat membuka jalan ke sistem lain yang memakai kredensial serupa.|
-|B. Default database administrator password|Akun administrator database masih menggunakan kata sandi default sejak awal sistem digunakan. Kondisi ini memudahkan penyerang mencoba teknik umum seperti brute force atau menebak kredensial untuk mendapatkan akses penuh.|
-|C. Unconfigured firewall rules|Firewall belum diatur dengan aturan penyaringan lalu lintas yang jelas. Lalu lintas masuk dan keluar jaringan berjalan tanpa batasan yang memadai, sehingga peluang akses tidak sah dari luar jaringan menjadi lebih besar.|
-|D. Absence of Multi-Factor Authentication (MFA)|Autentikasi multifaktor belum diterapkan pada akun pengguna maupun akun dengan hak akses tinggi. Proses login masih bergantung pada username dan password, yang membuat sistem rentan saat kredensial bocor atau dicuri.|
+|Kata sandi yang dibagikan kepada karyawan|Sejumlah karyawan memakai kata sandi yang sama untuk mengakses sistem internal. Pola ini menyulitkan pelacakan aktivitas pengguna dan meningkatkan risiko penyalahgunaan akses. Satu akun yang berhasil ditembus dapat membuka jalan ke sistem lain yang memakai kredensial serupa.|
+|Kata sandi default administrator database|Akun administrator database masih menggunakan kata sandi default sejak awal sistem digunakan. Kondisi ini memudahkan penyerang mencoba teknik umum seperti brute force atau menebak kredensial untuk mendapatkan akses penuh.|
+|Aturan firewall yang belum dikonfigurasi|Firewall belum diatur dengan aturan penyaringan lalu lintas yang jelas. Lalu lintas masuk dan keluar jaringan berjalan tanpa batasan yang memadai, sehingga peluang akses tidak sah dari luar jaringan menjadi lebih besar.|
+|Tidak ada Multi-Factor Authentication (MFA)|Autentikasi multifaktor belum diterapkan pada akun pengguna maupun akun dengan hak akses tinggi. Proses login masih bergantung pada username dan password, yang membuat sistem rentan saat kredensial bocor atau dicuri.|
 
 #### b. Risk analysis
 
@@ -58,9 +58,43 @@ Analisis risiko dilakukan dengan melihat seberapa besar peluang tiap celah keama
 
 |Kerentanan|Kemungkinan|Dampak|Tingkat resiko|
 |---|---|---|---|
-|A. Shared employee passwords|Tinggi|Tinggi|Tinggi|
-|B. Default database administrator password|Tinggi|Kritis|Tinggi|
-|C. Unconfigured firewall rules|Sedang|Tinggi|Tinggi|
-|D. Absence of Multi-Factor Authentication (MFA)|Tinggi|Tinggi|Tinggi|
+|Kata sandi yang dibagikan kepada karyawan|Tinggi|Tinggi|Tinggi|
+|Kata sandi default administrator database|Tinggi|Kritis|Tinggi|
+|Aturan firewall yang belum dikonfigurasi|Sedang|Tinggi|Tinggi|
+|Tidak ada Multi-Factor Authentication (MFA)|Tinggi|Tinggi|Tinggi|
 
 Kerentanan dengan tingkat risiko tinggi dan kritis dapat memicu kebocoran data lanjutan, gangguan operasional, hingga penyalahgunaan akses internal jika tidak segera ditangani dengan kontrol keamanan yang memadai.
+
+#### c. Security hardening recommendations
+
+Berdasarkan hasil analisis risiko, berikut rangkuman rekomendasi pengerasan jaringan yang disusun untuk menutup celah keamanan dan memperkuat perlindungan jaringan secara menyeluruh.
+
+|Kerentanan|Metode pengerasan|Alasan efektivitas|Frekuensi penerapan|
+|---|---|---|---|
+|Kata sandi yang dibagikan kepada karyawan|Penerapan kata sandi unik dan pengelolaan akun pengguna|Aktivitas pengguna dapat ditelusuri dengan jelas dan risiko penyalahgunaan akses internal berkurang|Diterapkan terus-menerus dengan audit berkala|
+|Kata sandi default administrator database|Penggantian kata sandi bawaan dan pembatasan hak akses admin|Mencegah akses tidak sah ke database dan menekan risiko pengambilalihan sistem|Setiap implementasi sistem dan peninjauan rutin|
+|Aturan firewall yang belum dikonfigurasi|Konfigurasi aturan firewall dan pemfilteran lalu lintas jaringan|Akses jaringan hanya datang dari sumber yang sah sehingga permukaan serangan lebih kecil|Monitoring harian dan evaluasi berkala|
+|Tidak ada Multi-Factor Authentication (MFA)|Penerapan MFA pada akun pengguna dan akun administratif|Menambah lapisan keamanan meskipun kredensial utama berhasil bocor|Diterapkan permanen dengan evaluasi kebijakan|
+
+Penerapan rekomendasi ini secara konsisten membantu organisasi menurunkan risiko pelanggaran data dan membangun postur keamanan jaringan yang lebih kuat serta berkelanjutan.
+
+#### d. Risk mitigation impact
+
+Penerapan langkah pengerasan jaringan yang direkomendasikan memberi dampak nyata pada peningkatan keamanan jaringan dan perlindungan data di platform media sosial. Setiap kontrol yang diterapkan membantu menutup celah yang sebelumnya mudah dimanfaatkan dan secara langsung menurunkan risiko terjadinya kebocoran data.
+
+|Area keamanan|Dampak mitigasi|
+|---|---|
+|Manajemen kata sandi dan akun|Akuntabilitas pengguna meningkat karena setiap akun dikelola lebih rapi dan menggunakan kata sandi unik, sehingga risiko penyalahgunaan akses internal dapat ditekan.|
+|Keamanan database|Peluang pengambilalihan sistem penting berkurang melalui penggantian kata sandi default dan pembatasan hak akses administrator.|
+|Keamanan jaringan|Permukaan serangan menjadi lebih kecil karena lalu lintas jaringan dibatasi hanya dari sumber yang terpercaya lewat pengaturan firewall yang tepat.|
+|Autentikasi pengguna|Proses login memiliki lapisan perlindungan tambahan, sehingga akun tetap aman meskipun kredensial utama sempat bocor.|
+|Monitoring dan kontrol risiko|Aktivitas jaringan lebih mudah dipantau dan potensi ancaman dapat terdeteksi lebih cepat berkat kontrol keamanan yang diterapkan secara konsisten.|
+|Postur keamanan keseluruhan|Risiko pelanggaran data di masa depan menurun dan ketahanan keamanan jaringan organisasi semakin kuat dalam jangka panjang.|
+
+## 🏁 Conclusion <a name="conclusion">
+
+Hasil penilaian risiko menunjukkan bahwa kebocoran data di organisasi media sosial ini terjadi karena praktik keamanan yang masih lemah dan penerapan pengerasan jaringan yang belum konsisten. Penggunaan kata sandi bersama, kredensial administrator bawaan, pengaturan firewall yang kurang tepat, serta tidak adanya autentikasi multifaktor membuka celah besar bagi akses yang tidak sah.
+
+Proses identifikasi kerentanan membantu memetakan area dengan risiko tinggi hingga kritis secara lebih jelas. Rekomendasi yang disusun berfokus pada penguatan kontrol akses, peningkatan mekanisme autentikasi, dan pengamanan lalu lintas jaringan. Langkah-langkah ini dirancang agar mudah diterapkan secara berkelanjutan dan sejalan dengan praktik keamanan jaringan yang umum digunakan di industri.
+
+Penerapan pengerasan jaringan yang direkomendasikan dapat menurunkan risiko kebocoran data di masa depan secara signifikan. Kontrol akses menjadi lebih terpantau, visibilitas jaringan meningkat, dan perlindungan terhadap data pribadi pengguna menjadi lebih kuat. Pendekatan ini membantu organisasi membangun postur keamanan yang lebih matang, menjaga kepercayaan pengguna, dan mendukung kestabilan operasional dalam jangka panjang.
