@@ -45,11 +45,13 @@ Assessment ini dilakukan untuk memberikan gambaran yang jelas mengenai kondisi k
 
 ## 🔍 Risk assessment report <a name="report">
 
+### a. Summary
+
 Laporan penilaian risiko keamanan ini dibuat untuk melihat kondisi keamanan jaringan di sebuah organisasi media sosial yang baru saja mengalami kebocoran data besar. Insiden tersebut berdampak langsung pada perlindungan data pribadi pengguna, seperti nama dan alamat, serta menimbulkan risiko serius terhadap kepercayaan publik dan reputasi perusahaan.
 
 Penilaian ini bertujuan menemukan kelemahan utama yang memicu terjadinya pelanggaran dan menilai risiko lanjutan jika celah tersebut tidak segera diperbaiki. Proses analisis dilakukan dengan meninjau pengelolaan akses, pengaturan jaringan, dan mekanisme autentikasi yang digunakan di lingkungan organisasi. Hasil penilaian diharapkan dapat menjadi landasan untuk menyusun langkah network hardening yang lebih kuat dan konsisten.
 
-### a. Identified vulnerabilities
+### b. Identified vulnerabilities
 
 Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamanan yang berperan dalam terjadinya kebocoran data. Masalah ini muncul dari kombinasi kelemahan teknis dan kebiasaan keamanan yang belum dijalankan secara konsisten.
 
@@ -60,7 +62,7 @@ Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamana
 |Aturan firewall yang belum dikonfigurasi|Firewall belum diatur dengan aturan penyaringan lalu lintas yang jelas. Lalu lintas masuk dan keluar jaringan berjalan tanpa batasan yang memadai, sehingga peluang akses tidak sah dari luar jaringan menjadi lebih besar.|
 |Tidak ada Multi-Factor Authentication (MFA)|Autentikasi multifaktor belum diterapkan pada akun pengguna maupun akun dengan hak akses tinggi. Proses login masih bergantung pada username dan password, yang membuat sistem rentan saat kredensial bocor atau dicuri.|
 
-### b. Risk analysis
+### c. Risk analysis
 
 Analisis risiko dilakukan dengan melihat seberapa besar peluang tiap celah keamanan bisa dimanfaatkan, serta dampak yang muncul jika hal itu benar-benar terjadi. Hasilnya menunjukkan bahwa sebagian besar kerentanan berada pada level risiko tinggi hingga kritis dan tidak bisa ditunda penanganannya.
 
@@ -73,7 +75,7 @@ Analisis risiko dilakukan dengan melihat seberapa besar peluang tiap celah keama
 
 Kerentanan dengan tingkat risiko tinggi dan kritis dapat memicu kebocoran data lanjutan, gangguan operasional, hingga penyalahgunaan akses internal jika tidak segera ditangani dengan kontrol keamanan yang memadai.
 
-### c. Security hardening recommendations
+### d. Security hardening recommendations
 
 Berdasarkan hasil analisis risiko, berikut rangkuman rekomendasi pengerasan jaringan yang disusun untuk menutup celah keamanan dan memperkuat perlindungan jaringan secara menyeluruh.
 
@@ -86,7 +88,7 @@ Berdasarkan hasil analisis risiko, berikut rangkuman rekomendasi pengerasan jari
 
 Penerapan rekomendasi ini secara konsisten membantu organisasi menurunkan risiko pelanggaran data dan membangun postur keamanan jaringan yang lebih kuat serta berkelanjutan.
 
-### d. Risk mitigation impact
+### e. Risk mitigation impact
 
 Penerapan langkah pengerasan jaringan yang direkomendasikan memberi dampak nyata pada peningkatan keamanan jaringan dan perlindungan data di platform media sosial. Setiap kontrol yang diterapkan membantu menutup celah yang sebelumnya mudah dimanfaatkan dan secara langsung menurunkan risiko terjadinya kebocoran data.
 
