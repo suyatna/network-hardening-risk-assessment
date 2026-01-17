@@ -1,15 +1,16 @@
 # Network hardening risk assessment for social media organization
 
-## 📑 Table of contents
+## 📌 Table of contents
 
-1. [Introduction](#introduction)
-2. [Incident scenario](#scenario)
-3. [Security risk assessment report](#report)
-4. [Conclusion](#conclusion)
+1. [Background](#background)
+2. [Organization and system context](#scenario)
+3. [Assessment objectives](#objective)
+4. [Risk assessment report](#riskassessment)
+5. [Insights and lessons learned](#insight)
 
 ---
 
-## 👋 Introduction <a name="introduction">
+## 🧠 Background <a name="background">
 
 Studi ini disusun sebagai latihan cybersecurity yang berfokus pada upaya memperkuat keamanan jaringan setelah terjadinya kebocoran data di sebuah organisasi media sosial. Skenario yang digunakan menggambarkan situasi ketika celah jaringan tidak terpantau dengan baik dan akhirnya berdampak langsung pada data pelanggan. Kondisi ini menjadi titik awal untuk memahami risiko yang muncul ketika masalah keamanan tidak segera ditangani.
 
@@ -17,7 +18,7 @@ Pembahasan ini merujuk pada materi dalam program Google Cybersecurity Profession
 
 ---
 
-## 💭 Incident scenario <a name="scenario">
+## 🏢 Organization and system context <a name="scenario">
 
 Saya berperan sebagai analis keamanan siber di sebuah organisasi media sosial yang baru saja mengalami kebocoran data dalam skala besar. Insiden ini membuka kemungkinan tereksposnya data pribadi pengguna, seperti nama dan alamat, ke pihak yang tidak berhak. Situasi ini langsung memicu kekhawatiran karena data pengguna adalah aset penting yang sangat memengaruhi kepercayaan publik.
 
@@ -31,9 +32,18 @@ Temuan ini menunjukkan bahwa pelanggaran data terjadi akibat kombinasi dari prak
 
 ---
 
-## 📋 Security risk assessment report<a name="report">
+## 🎯 Assessment objectives <a name="objective">
 
-### Social media organization network hardening
+Assessment ini dilakukan untuk memberikan gambaran yang jelas mengenai kondisi keamanan jaringan serta potensi risiko yang dapat memengaruhi operasional organisasi media sosial. Tujuan berikut dirumuskan sebagai acuan dalam proses analisis dan evaluasi keamanan jaringan.
+- Mengidentifikasi potensi risiko keamanan jaringan yang dapat memengaruhi ketersediaan, integritas, dan kerahasiaan sistem
+- Mengevaluasi konfigurasi jaringan serta praktik keamanan yang diterapkan pada infrastruktur pendukung layanan digital
+- Menilai efektivitas kontrol keamanan yang telah diterapkan dan mengidentifikasi celah yang berpotensi dimanfaatkan oleh ancaman internal maupun eksternal
+- Menentukan tingkat risiko dari setiap temuan sebagai dasar penetapan prioritas penanganan
+- Memberikan landasan bagi penerapan network hardening untuk meningkatkan ketahanan dan postur keamanan jaringan secara keseluruhan
+
+---
+
+## 🔍 Risk assessment report <a name="report">
 
 Laporan penilaian risiko keamanan ini dibuat untuk melihat kondisi keamanan jaringan di sebuah organisasi media sosial yang baru saja mengalami kebocoran data besar. Insiden tersebut berdampak langsung pada perlindungan data pribadi pengguna, seperti nama dan alamat, serta menimbulkan risiko serius terhadap kepercayaan publik dan reputasi perusahaan.
 
@@ -41,7 +51,7 @@ Penilaian ini bertujuan menemukan kelemahan utama yang memicu terjadinya pelangg
 
 Hasil penilaian diharapkan dapat menjadi landasan untuk menyusun langkah network hardening yang lebih kuat dan konsisten. Pendekatan ini bertujuan mencegah insiden serupa di masa depan sekaligus memperkuat keamanan jaringan secara menyeluruh.
 
-#### a. Identified vulnerabilities
+### a. Identified vulnerabilities
 
 Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamanan yang berperan dalam terjadinya kebocoran data. Masalah ini muncul dari kombinasi kelemahan teknis dan kebiasaan keamanan yang belum dijalankan secara konsisten.
 
@@ -52,7 +62,7 @@ Pemeriksaan awal terhadap sistem dan jaringan menunjukkan beberapa celah keamana
 |Aturan firewall yang belum dikonfigurasi|Firewall belum diatur dengan aturan penyaringan lalu lintas yang jelas. Lalu lintas masuk dan keluar jaringan berjalan tanpa batasan yang memadai, sehingga peluang akses tidak sah dari luar jaringan menjadi lebih besar.|
 |Tidak ada Multi-Factor Authentication (MFA)|Autentikasi multifaktor belum diterapkan pada akun pengguna maupun akun dengan hak akses tinggi. Proses login masih bergantung pada username dan password, yang membuat sistem rentan saat kredensial bocor atau dicuri.|
 
-#### b. Risk analysis
+### b. Risk analysis
 
 Analisis risiko dilakukan dengan melihat seberapa besar peluang tiap celah keamanan bisa dimanfaatkan, serta dampak yang muncul jika hal itu benar-benar terjadi. Hasilnya menunjukkan bahwa sebagian besar kerentanan berada pada level risiko tinggi hingga kritis dan tidak bisa ditunda penanganannya.
 
@@ -65,7 +75,7 @@ Analisis risiko dilakukan dengan melihat seberapa besar peluang tiap celah keama
 
 Kerentanan dengan tingkat risiko tinggi dan kritis dapat memicu kebocoran data lanjutan, gangguan operasional, hingga penyalahgunaan akses internal jika tidak segera ditangani dengan kontrol keamanan yang memadai.
 
-#### c. Security hardening recommendations
+### c. Security hardening recommendations
 
 Berdasarkan hasil analisis risiko, berikut rangkuman rekomendasi pengerasan jaringan yang disusun untuk menutup celah keamanan dan memperkuat perlindungan jaringan secara menyeluruh.
 
@@ -78,7 +88,7 @@ Berdasarkan hasil analisis risiko, berikut rangkuman rekomendasi pengerasan jari
 
 Penerapan rekomendasi ini secara konsisten membantu organisasi menurunkan risiko pelanggaran data dan membangun postur keamanan jaringan yang lebih kuat serta berkelanjutan.
 
-#### d. Risk mitigation impact
+### d. Risk mitigation impact
 
 Penerapan langkah pengerasan jaringan yang direkomendasikan memberi dampak nyata pada peningkatan keamanan jaringan dan perlindungan data di platform media sosial. Setiap kontrol yang diterapkan membantu menutup celah yang sebelumnya mudah dimanfaatkan dan secara langsung menurunkan risiko terjadinya kebocoran data.
 
@@ -93,10 +103,10 @@ Penerapan langkah pengerasan jaringan yang direkomendasikan memberi dampak nyata
 
 ---
 
-## 🏁 Conclusion <a name="conclusion">
+## 💡 Insights and lessons learned <a name="insight">
 
-Hasil penilaian risiko menunjukkan bahwa kebocoran data di organisasi media sosial ini terjadi karena praktik keamanan yang masih lemah dan penerapan pengerasan jaringan yang belum konsisten. Penggunaan kata sandi bersama, kredensial administrator bawaan, pengaturan firewall yang kurang tepat, serta tidak adanya autentikasi multifaktor membuka celah besar bagi akses yang tidak sah.
+Hasil penilaian risiko memperlihatkan bahwa insiden kebocoran data terjadi karena praktik keamanan yang belum kuat dan penerapan pengerasan jaringan yang tidak merata. Penggunaan kata sandi bersama, kredensial administrator bawaan, konfigurasi firewall yang kurang tepat, serta ketiadaan autentikasi multifaktor menciptakan celah serius bagi akses tanpa izin.
 
-Proses identifikasi kerentanan membantu memetakan area dengan risiko tinggi hingga kritis secara lebih jelas. Rekomendasi yang disusun berfokus pada penguatan kontrol akses, peningkatan mekanisme autentikasi, dan pengamanan lalu lintas jaringan. Langkah-langkah ini dirancang agar mudah diterapkan secara berkelanjutan dan sejalan dengan praktik keamanan jaringan yang umum digunakan di industri.
+Identifikasi kerentanan membantu menggambarkan area dengan tingkat risiko tinggi hingga kritis secara lebih jelas. Rekomendasi difokuskan pada penguatan kontrol akses, perbaikan proses autentikasi, dan perlindungan lalu lintas jaringan. Pendekatan ini disusun agar dapat diterapkan secara konsisten dan tetap selaras dengan standar keamanan jaringan yang umum digunakan.
 
-Penerapan pengerasan jaringan yang direkomendasikan dapat menurunkan risiko kebocoran data di masa depan secara signifikan. Kontrol akses menjadi lebih terpantau, visibilitas jaringan meningkat, dan perlindungan terhadap data pribadi pengguna menjadi lebih kuat. Pendekatan ini membantu organisasi membangun postur keamanan yang lebih matang, menjaga kepercayaan pengguna, dan mendukung kestabilan operasional dalam jangka panjang.
+Penerapan langkah pengerasan jaringan tersebut mampu menekan risiko kebocoran data di masa mendatang secara signifikan. Kontrol akses menjadi lebih terkelola, visibilitas aktivitas jaringan meningkat, dan perlindungan data pengguna menjadi lebih andal. Strategi ini membantu organisasi membangun postur keamanan yang lebih matang sekaligus menjaga kepercayaan pengguna dan stabilitas operasional jangka panjang.
